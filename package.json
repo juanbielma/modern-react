@@ -1,0 +1,13 @@
+{
+  "name": "@jb/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:juanbielma/modern-react.git",
+  "author": "juanbielma <juan.bielma@globant.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "playgrounds/*"
+    ]
+  }
+}
