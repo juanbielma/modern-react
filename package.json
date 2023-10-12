@@ -5,6 +5,7 @@
   "repository": "git@github.com:juanbielma/modern-react.git",
   "author": "juanbielma <juan.bielma@globant.com>",
   "license": "MIT",
+  "private": true,
   "workspaces": {
     "packages": [
       "playgrounds/*"
