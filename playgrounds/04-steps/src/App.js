@@ -25,9 +25,9 @@ const Steps = ({ step, handlePrevious, handleNext }) => {
   return (
     <div className="steps">
       <div className="numbers">
-        <div className={step >= 0 && "active"}>1</div>
-        <div className={step >= 1 && "active"}>2</div>
-        <div className={step >= 2 && "active"}>3</div>
+        <div className={step >= 0 ? "active" : ""}>1</div>
+        <div className={step >= 1 ? "active" : ""}>2</div>
+        <div className={step >= 2 ? "active" : ""}>3</div>
       </div>
 
       <p className="message">
