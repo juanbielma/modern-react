@@ -63,6 +63,7 @@ const App = () => {
       </div>
       {selectedFriend ? (
         <SplitForm
+          key={selectedFriend.id}
           id={selectedFriend.id}
           name={selectedFriend.name}
           balance={selectedFriend.balance}
