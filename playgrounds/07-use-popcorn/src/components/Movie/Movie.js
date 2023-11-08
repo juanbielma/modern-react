@@ -1,13 +1,13 @@
-function Movie({ movie }) {
+function Movie({ movie, onSelectMovie, onDelete }) {
   return (
-    <li>
-      <img src={movie.Poster} alt={`${movie.Title} poster`} />
-      <h3>{movie.Title}</h3>
+    <li onClick={() => onSelectMovie && onSelectMovie(movie.imdbID)}>
+      <img src={movie.poster} alt={`${movie.title} poster`} />
+      <h3>{movie.title}</h3>
       {!movie.runtime ? (
         <div>
           <p>
             <span>🗓</span>
-            <span>{movie.Year}</span>
+            <span>{movie.year}</span>
           </p>
         </div>
       ) : (
@@ -24,6 +24,13 @@ function Movie({ movie }) {
             <span>⏳</span>
             <span>{movie.runtime} min</span>
           </p>
+
+          <button
+            className="btn-delete"
+            onClick={() => onDelete && onDelete(movie.imdbID)}
+          >
+            X
+          </button>
         </div>
       )}
     </li>
